@@ -8,12 +8,12 @@
 <body>
     <!-- Method: GET: Para info no sensible - Post: para info sensible-->
     <form method="post" action="backend/form.php">
-
+        <!--Tipo input, para ingresar texto plano.-->
         <label for="nombreusuario">Nombre:</label>
         <input type="text" name="nombreusuario" id="nombreusuario" placeholder="María">
 
         <br>
-
+        <!--Tipo select, para seleccionar entre una o varias opciones (multiple)-->
         <label for="pais">País:</label>
         <select name="pais" id="pais">
             <option value="es">España</option>
@@ -27,22 +27,26 @@
         </select>
 
         <br>
-
+        <!--Tipo radio, para seleccionar una de las opciones.-->
         <input type="radio" name="comida" id="arroz" value="arroz"> <label for="arroz">Arroz</label>
         <input type="radio" name="comida" id="pollo" value="pollo"> <label for="pollo">Pollo</label>
 
         <br>
-
+        <!--Tipo checkbox, para seleccionar opcion.-->
         <input type="checkbox" name="terminos" id="terminos" value="yes"> <label for="terminos">Acepto los términos y condiciones.</label>
 
         <br>
-
+        <!--Tipo rango, para seleccionar una barra de rango-->
         <input type="range" name="porcentaje" id="porcentaje" min="0" max="100">
 
         <br>
-
+        <!--Tipo area de texto, para ingresar texto.-->
         <label for="comentario">Realice un comentario:</label>
-        <textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10" maxlength="500" placeholder="Min. 5 caracteres, máx. 500 caracteres"></textarea>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10" maxlength="500" placeholder="Min. 5 caracteres, máx. 500 caracteres" required></textarea>
+
+        <br>
+        <!--Un boton para enviar-->
+        <input type="submit" value="Enviar">
     </form> 
 </body>
 </html>
