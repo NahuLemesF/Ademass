@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #666;
+}
+
+.card {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400;
+    height: 600px;
+    background-color: white;
+}
+
+.card h3 {
+    text-transform: uppercase;
+    color: #666;
+}
+
+.card p {
+    color: #666;
+}
