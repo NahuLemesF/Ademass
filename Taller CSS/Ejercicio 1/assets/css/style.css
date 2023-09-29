@@ -4,10 +4,15 @@
     --secondary-color: #48ca95;
     --bg-color: #f7f7f7;
     --light-color: #fff;
+    --dark-color: #000;
 
+    --title-font: Poppins-Extrabold;
     --text-font: Poppins;
     --menu-font: Poppins-bold;
+
 }
+
+/* ========== CONFIGURACIONES GENERALES ========== */
 
 * {
     margin: 0;
@@ -31,6 +36,8 @@
     src: url(../fonts/Poppins-ExtraBold.ttf);
 }
 
+/* ========== HEADER ========== */
+
 header {
     background-image: url(../images/banner.jpg);
     background-size: cover;
@@ -53,14 +60,13 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px;
+    padding: 20px;
     color: var(--light-color);
 }
 
 nav ul li a {
     color: var(--light-color);
     text-decoration: none;
-    font-family: var(--menu-font);
 }
 
 nav ul li a:hover {
@@ -70,11 +76,207 @@ nav ul li a:hover {
 .header {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 5%;
     margin-bottom: 50px;
 }
 
 .header__content {
-    min-width: 500px;
+    max-width: 500px;
     color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.header__content-title {
+    font-size: 80px;
+    font-family: var(--menu-font);
+}
+
+.header__content-subtitle {
+    font-size: 40px;
+}
+
+.header__buttons {
+    margin-top: 50px;
+}
+
+.header__buttons-btn {
+    color: var(--light-color);
+    padding: 15px 70px;
+    margin: 0px 5px;
+    border: 2px solid var(--light-color);
+    text-decoration: none;
+}
+
+.header__buttons-btn:hover {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.header__img {
+    margin: 5px 25px;
+}
+
+.nav__mobile {
+    display: none;
+}
+
+/* ========== CARDS ========== */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.cards__card {
+    margin: 15px;
+    padding: 30px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards__card p {
+    text-align: center;
+}
+
+.cards__card h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* ========== PRODUCTS ========== */
+.container {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container h1 {
+    font-size: 35px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-decoration: underline var(--secondary-color);
+    text-transform: uppercase;
+    font-family: var(--menu-font);
+}
+
+.container__products {
+    background-color: var(--light-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 50px;
+    ;
+    margin-bottom: 50px;
+}
+
+.container__products-product {
+    padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__products-btn {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 5px 50px;
+    margin-top: 40px;
+    border: none;
+    text-decoration: none;
+}
+
+.container__products-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.container__btn {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.container__btn-btn {
+    color: var(--secondary-color);
+    padding: 15px 70px;
+    margin: 0px 5px;
+    border: 2px solid var(--secondary-color);
+    text-decoration: none;
+}
+
+.container__btn-btn:hover {
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--light-color);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+
+@media screen and (max-width:960px) {
+    
+    .nav__mobile {
+        display: flex;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .cards__card {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header__content {
+        margin-left: 20px;
+    }
+
+    .header__content-title {
+        font-size: 40px;
+        font-family: var(--menu-font);
+    }
+
+    .header__content-subtitle {
+        font-size: 20px;
+    }
+
+    .header__content p {
+        font-size: 14px;
+    }
+
+    .header__buttons-btn {
+        padding: 10px 30px;
+    }
+
+    .header__img {
+        margin: 50px 10px;
+        width: 95%;
+        height: 100%;
+        max-width: 500px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+    
 }

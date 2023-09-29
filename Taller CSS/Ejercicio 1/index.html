@@ -4,31 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Computer and Laptop</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <!-- Nav. Logo y Menú -->
             <img src="./assets/images/logo.png" alt="Logo" width="78" height="82">
-            <ul>
+            <ul class="nav__menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Computer</a></li>
                 <li><a href="#">Laptop</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#">Contact us</a></li>
-                <li><a href="#">Search</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="#">Login</a></li>
             </ul>
+            <img class="nav__mobile" src="./assets/images/menu_icon.png" alt="menu-icon" width="36" height="21">
         </nav>
 
         <div class="header">
             <div class="header__content">
                 <!-- Banner principal-->
-                <h3>Computer and Laptop</h3>
+                <h3 class="header__content-subtitle">Computer and Laptop</h3>
                 <h1 class="header__content-title">Accesories</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, libero neque distinctio illo,
                     aspernatur
@@ -36,18 +45,86 @@
                     dolores
                     dignissimos.</p>
                 <!-- Botones -->
-                <a class="header__content-btn" ="#">Buy Now</a>
-                <a class="header__content-btn" ="#">Contact</a>
+                <div class="header__buttons">
+                    <a class="header__buttons-btn" href="#">Buy Now</a>
+                    <a class="header__buttons-btn" href="#">Contact</a>
+                </div>
             </div>
-            <div class="header__img">
+            <div>
                 <!-- Imagen de PC -->
-                <img src="./assets/images/pct.png" alt="Pc" width="696" height="278">
+                <img class="header__img" src="./assets/images/pct.png" alt="Pc" width="696" height="278">
             </div>
         </div>
     </header>
     <main>
-        <section></section>
-        <section></section>
+        <!-- Cards Section -->
+        <section class="cards">
+            <div class="cards__card">
+                <img src="./assets/images/thr.png" alt="thr">
+                <h5>Computer</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae at non consequatur deleniti. Dolorum
+                    quidem laboriosam assumenda excepturi? Repudiandae deserunt magnam alias qui commodi voluptates
+                    ipsum? Ipsum corrupti nam veniam.</p>
+            </div>
+            <div class="cards__card">
+                <img src="./assets/images/thr1.png" alt="thr1">
+                <h5>Laptop</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae at non consequatur deleniti. Dolorum
+                    quidem laboriosam assumenda excepturi? Repudiandae deserunt magnam alias qui commodi voluptates
+                    ipsum? Ipsum corrupti nam veniam.</p>
+            </div>
+            <div class="cards__card">
+                <img src="./assets/images/thr2.png" alt="thr2">
+                <h5>Tablet</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae at non consequatur deleniti. Dolorum
+                    quidem laboriosam assumenda excepturi? Repudiandae deserunt magnam alias qui commodi voluptates
+                    ipsum? Ipsum corrupti nam veniam.</p>
+            </div>
+        </section>
+        <section class="container">
+            <h1 id="products">Our Products</h1>
+            <div class="container__products">
+                <div class="container__products-product">
+                    <img src="./assets/images/product1.png" alt="product1">
+                    <a class="container__products-btn" href="#">Computer</a>
+                </div>
+                <div class="container__products-product">
+                    <img src="./assets/images/product2.png" alt="product2">
+                    <a class="container__products-btn" href="#">Laptop</a>
+                </div>
+                <div class="container__products-product">
+                    <img src="./assets/images/product3.png" alt="product3">
+                    <a class="container__products-btn" href="#">Tablet</a>
+                </div>
+                <div class="container__products-product">
+                    <img src="./assets/images/product4.png" alt="product4">
+                    <a class="container__products-btn" href="#">Speakers</a>
+                </div>
+                <div class="container__products-product">
+                    <img src="./assets/images/product5.png" alt="product5">
+                    <a class="container__products-btn" href="#">Internet</a>
+                </div>
+                <div class="container__products-product">
+                    <img src="./assets/images/product6.png" alt="product6">
+                    <a class="container__products-btn" href="#">Hardisk</a>
+                </div>
+                <div class="container__products-product">
+                    <img src="./assets/images/product7.png" alt="product7">
+                    <a class="container__products-btn" href="#">Rams</a>
+                </div>
+                <div class="container__products-product">
+                    <img src="./assets/images/product8.png" alt="product8">
+                    <a class="container__products-btn" href="#">Battery</a>
+                </div>
+                <div class="container__products-product">
+                    <img src="./assets/images/product9.png" alt="product9">
+                    <a class="container__products-btn" href="#">Drive</a>
+                </div>
+                <div class="container__btn">
+                    <a class="container__btn-btn" href="#">See More</a>
+                </div>
+            </div>
+        </section>
         <section></section>
         <section></section>
         <section></section>
